@@ -25,13 +25,14 @@ public class Game {
                     continue;
                 }
 
+                availableLetters.remove(Character.valueOf(guessedLetter));
+
                 if (chosenWord.guessLetter(guessedLetter)) {
                     System.out.println("Correct!");
                 } else {
                     System.out.println("Wrong guess.");
                 }
 
-                availableLetters.remove(Character.valueOf(guessedLetter));
                 guesses++;
             }
 
