@@ -16,8 +16,8 @@ public class MainTest {
         // Add, update, and remove data
         Student s4 = new Student("Bob", "Williams", "1004", 2002);
         table.add(s4, 80);
-        table.add(s1, 87);  // Update John's grade
-        table.remove(s2);   // Remove Jane
+        table.add(s1, 87);  // Update Shadi's grade
+        table.remove(s2);   // Remove Ronlado
 
         // Display the sorted list of students and their grades
         for (Iterator<Student> it = table.keyIterator(); it.hasNext(); ) {
